@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #ff0000;
+  --secondary: #ffd700;
+  --dark: #1a1a1a;
+}
+
+body {
+  background-color: var(--dark);
+  color: white;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.btn-primary {
+  @apply px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-black rounded-lg transition-all duration-300;
+}
